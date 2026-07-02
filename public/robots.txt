@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://osoul-insurance.com/sitemap.xml
