@@ -1,10 +1,10 @@
 import type { Client } from '@/types/client.types';
 import {
-  abeLogo,
-  dreamlandLogo,
-  ealLogo,
+  abeLogoSm as abeLogo,
+  dreamlandLogoSm as dreamlandLogo,
+  ealLogoSm as ealLogo,
   ebeLogo,
-  jacquardLogo,
+  jacquardLogoSm as jacquardLogo,
 } from '@/assets';
 
 export const clients: Client[] = [

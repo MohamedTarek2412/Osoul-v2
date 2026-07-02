@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Shield } from 'lucide-react';
-import { heroOffice } from '@/assets';
+import { heroOffice, heroOfficeMd, heroOfficeSm } from '@/assets';
 import { siteConfig } from '@/config/site.config';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Button } from '@/components/ui/button';
@@ -48,12 +48,18 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
             className="relative overflow-hidden rounded-2xl shadow-xl"
           >
-            <img
-              src={heroOffice}
-              alt={copy.hero.title}
-              className="aspect-[4/3] w-full object-cover"
-              decoding="async"
-            />
+            <picture>
+              <source srcSet={heroOfficeSm} media="(max-width: 640px)" />
+              <source srcSet={heroOfficeMd} media="(max-width: 1024px)" />
+              <img
+                src={heroOffice}
+                alt={copy.hero.title}
+                className="aspect-[4/3] w-full object-cover"
+                width={1364}
+                height={1024}
+                fetchPriority="high"
+              />
+            </picture>
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
             <div className="absolute bottom-4 right-4 left-4 rounded-lg bg-card/90 p-4 backdrop-blur">
               <p className="font-bold">{siteConfig.name}</p>
