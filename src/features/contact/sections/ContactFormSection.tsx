@@ -14,10 +14,14 @@ import { useToast } from '@/hooks/useToast';
 import { useLanguage } from '@/hooks/useLanguage';
 import { cn } from '@/lib/utils';
 import { fadeInUp } from '@/lib/motion';
+import { LoadingSpinner } from '@/components/ui/loading';
+import { SuccessAlert, ErrorAlert } from '@/components/ui/feedback';
+import React from 'react';
 
 export function ContactFormSection() {
   const { locale, copy } = useLanguage();
   const { showToast } = useToast();
+  const [submitState, setSubmitState] = React.useState<'idle' | 'success' | 'error'>('idle');
   const {
     register,
     handleSubmit,
@@ -28,9 +32,17 @@ export function ContactFormSection() {
   });
 
   const onSubmit = async (_data: ContactFormValues) => {
-    await new Promise((resolve) => setTimeout(resolve, 800));
-    showToast(copy.contactPage.success, 'success');
-    reset();
+    try {
+      setSubmitState('idle');
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      // simulate success
+      setSubmitState('success');
+      showToast(copy.contactPage.success, 'success');
+      reset();
+    } catch (e) {
+      setSubmitState('error');
+      showToast('حدث خطأ أثناء الإرسال', 'error');
+    }
   };
 
   return (
@@ -45,6 +57,8 @@ export function ContactFormSection() {
         <CardTitle>{copy.contactPage.formTitle}</CardTitle>
       </CardHeader>
       <CardContent>
+        {submitState === 'success' && <div className="mb-4"><SuccessAlert>{copy.contactPage.success}</SuccessAlert></div>}
+        {submitState === 'error' && <div className="mb-4"><ErrorAlert>حدث خطأ أثناء الإرسال. حاول مرة أخرى لاحقًا.</ErrorAlert></div>}
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
           <div className="grid gap-4 sm:grid-cols-2">
             <Field
@@ -115,6 +129,7 @@ export function ContactFormSection() {
             />
           </Field>
           <Button type="submit" className="w-full" disabled={isSubmitting}>
+            {isSubmitting ? <LoadingSpinner className="mr-2" /> : null}
             {isSubmitting ? copy.contactPage.labels.sending : copy.contactPage.labels.send}
           </Button>
         </form>
