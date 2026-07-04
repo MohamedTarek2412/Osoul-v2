@@ -5,7 +5,7 @@ export const fadeInUp: Variants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.45, ease: 'easeOut' },
+    transition: { duration: 0.28, ease: 'easeOut' },
   },
 };
 
@@ -13,7 +13,7 @@ export const fadeIn: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { duration: 0.4, ease: 'easeOut' },
+    transition: { duration: 0.22, ease: 'easeOut' },
   },
 };
 
@@ -22,8 +22,8 @@ export const staggerContainer: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.05,
+      staggerChildren: 0.04,
+      delayChildren: 0.03,
     },
   },
 };
@@ -33,15 +33,15 @@ export const scaleIn: Variants = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.4, ease: 'easeOut' },
+    transition: { duration: 0.25, ease: 'easeOut' },
   },
 };
 
 export const cardHover = {
   rest: { scale: 1, y: 0 },
   hover: {
-    scale: 1.02,
-    y: -4,
-    transition: { duration: 0.2, ease: 'easeOut' },
+    scale: 1.01,
+    y: -2,
+    transition: { duration: 0.14, ease: 'easeOut' },
   },
 };

@@ -1,4 +1,3 @@
-import type { LucideIcon } from 'lucide-react';
 import type { IconName } from '@/types/icon.types';
 import {
   ArrowLeft,
@@ -8,12 +7,8 @@ import {
   ChevronLeft,
   ChevronRight,
   HeartPulse,
-  Mail,
-  MapPin,
   Menu,
   Moon,
-  Phone,
-  Shield,
   ShieldCheck,
   Ship,
   Star,
@@ -22,7 +17,10 @@ import {
   X,
 } from 'lucide-react';
 
-export const iconMap: Record<IconName, LucideIcon> = {
+import { Phone as PhoneIcon, Mail as MailIcon, MapPin as MapPinIcon, Shield as ShieldIcon } from './customIcons';
+
+// Use local icons where available to reduce external dependency surface and allow branding.
+export const iconMap: Record<IconName, any> = {
   ArrowLeft,
   Building2,
   Car,
@@ -30,12 +28,12 @@ export const iconMap: Record<IconName, LucideIcon> = {
   ChevronLeft,
   ChevronRight,
   HeartPulse,
-  Mail,
-  MapPin,
+  Mail: MailIcon,
+  MapPin: MapPinIcon,
   Menu,
   Moon,
-  Phone,
-  Shield,
+  Phone: PhoneIcon,
+  Shield: ShieldIcon,
   ShieldCheck,
   Ship,
   Star,

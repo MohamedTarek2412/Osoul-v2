@@ -1,4 +1,16 @@
 :root {
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-ar: "Cairo", "Noto Naskh Arabic", system-ui;
+  /* Spacing scale (can be used in components via var(--space-1) etc.) */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
   --background: 48 100% 98%;
   --foreground: 222 47% 11%;
   --card: 48 100% 100%;
@@ -20,6 +32,8 @@
 }
 
 .dark {
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-ar: "Cairo", "Noto Naskh Arabic", system-ui;
   --background: 52 9% 9%;
   --foreground: 40 15% 95%;
   --card: 52 10% 16%;
@@ -37,4 +51,12 @@
   --border: 44 20% 25%;
   --input: 218 10% 18%;
   --ring: 44 52% 64%;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-ar), var(--font-sans);
+}
+
+html:not([dir="rtl"]) body {
+  font-family: var(--font-sans);
 }

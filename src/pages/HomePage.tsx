@@ -8,6 +8,9 @@ import { WhyChooseSection } from '@/features/home/sections/WhyChooseSection';
 import { LeadershipTeamSection } from '@/features/home/sections/LeadershipTeamSection';
 import { CertificationsSection } from '@/features/home/sections/CertificationsSection';
 import { CtaSection } from '@/features/home/sections/CtaSection';
+import { TimelineSection } from '@/features/home/sections/TimelineSection';
+import { MasonryGridSection } from '@/features/home/sections/MasonryGridSection';
+import { BentoGridSection } from '@/features/home/sections/BentoGridSection';
 import { Seo } from '@/components/Seo';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -20,6 +23,9 @@ export function HomePage() {
       <HeroSection />
       <LicensedTrustedSection />
       <TrustedClientsSection />
+        <TimelineSection />
+        <MasonryGridSection />
+        <BentoGridSection />
       <AboutSection />
       <HowWeWorkSection />
       <ServicesPreviewSection />
