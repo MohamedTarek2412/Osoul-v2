@@ -82,15 +82,15 @@ export function HowWeWorkSection() {
                     isEven ? 'md:order-2 md:pl-8' : 'md:order-1 md:pr-8'
                   )}
                 >
-                  <span className="text-sm font-bold uppercase tracking-widest text-primary font-mono">
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary font-mono">
                     {isRtl ? `الخطوة ${step.step}` : `Step ${step.step}`}
                   </span>
                   
-                  <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                     {locale === 'ar' ? step.title : step.titleEn}
                   </h3>
                   
-                  <p className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-xl">
+                  <p className="text-sm sm:text-base leading-relaxed text-muted-foreground max-w-xl">
                     {locale === 'ar' ? step.description : step.descriptionEn}
                   </p>
 

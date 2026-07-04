@@ -98,15 +98,15 @@ export function TimelineSection() {
                     <div className="rounded-2xl border border-border/80 bg-muted/40 p-6 shadow-sm hover:border-primary/20 hover:bg-card transition-all duration-300 relative group">
                       
                       {/* Year badge */}
-                      <span className="inline-block px-3 py-1 text-sm font-bold font-mono tracking-wide text-primary bg-primary/10 border border-primary/20 rounded-full mb-3">
+                      <span className="inline-block px-3 py-1 text-xs font-bold font-mono tracking-wide text-primary bg-primary/10 border border-primary/20 rounded-full mb-3">
                         {item.year}
                       </span>
                       
-                      <h3 className="text-xl font-extrabold text-foreground">
+                      <h3 className="text-lg font-bold text-foreground">
                         {isRtl ? item.titleAr : item.titleEn}
                       </h3>
                       
-                      <p className="text-base leading-relaxed text-muted-foreground mt-2">
+                      <p className="text-sm leading-relaxed text-muted-foreground mt-2">
                         {isRtl ? item.descAr : item.descEn}
                       </p>
                     </div>

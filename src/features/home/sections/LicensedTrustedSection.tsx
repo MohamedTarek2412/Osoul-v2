@@ -25,8 +25,8 @@ export function LicensedTrustedSection() {
             <Star className="h-3 w-3 fill-current" />
             {copy.licensedTrusted.badge}
           </Badge>
-          <h2 className="text-3xl font-extrabold md:text-4xl">{copy.licensedTrusted.title}</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-lg font-medium text-muted-foreground">
+          <h2 className="text-2xl font-extrabold sm:text-3xl md:text-4xl">{copy.licensedTrusted.title}</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-base sm:text-lg text-muted-foreground">
             {copy.licensedTrusted.description}
           </p>
         </motion.div>
@@ -46,8 +46,8 @@ export function LicensedTrustedSection() {
                     <Check className="h-4 w-4" />
                   </div>
                   <div>
-                    <p className="text-base font-bold">{locale === 'ar' ? item.labelAr : item.labelEn}</p>
-                    <p className="mt-0.5 text-sm text-muted-foreground">
+                    <p className="text-sm font-bold">{locale === 'ar' ? item.labelAr : item.labelEn}</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
                       {locale === 'ar' ? item.labelAr : item.labelEn}
                     </p>
                   </div>
@@ -71,9 +71,9 @@ export function LicensedTrustedSection() {
                   <ShieldCheck className="h-7 w-7 text-primary" />
                 </div>
                 <div className="text-center sm:text-start">
-                  <p className="text-sm font-medium text-primary">{copy.licensedTrusted.licenseLabel}</p>
-                  <p className="text-2xl font-bold">{license.licenseNo}</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-xs font-medium text-primary">{copy.licensedTrusted.licenseLabel}</p>
+                  <p className="text-xl font-bold">{license.licenseNo}</p>
+                  <p className="text-xs text-muted-foreground">
                     {locale === 'ar' ? license.authorityAr : license.authorityEn}
                   </p>
                 </div>

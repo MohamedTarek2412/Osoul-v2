@@ -70,7 +70,7 @@ export function HeroSection() {
             {/* Regulatory Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-5 py-2.5 text-lg font-extrabold tracking-wide text-primary shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-semibold tracking-wider text-primary shadow-sm"
             >
               <ShieldCheck className="h-4 w-4 text-primary shrink-0" />
               <span>{copy.hero.pretitle}</span>
@@ -79,7 +79,7 @@ export function HeroSection() {
             {/* Main Luxury Title */}
             <motion.h1
               variants={itemVariants}
-              className="text-3xl font-black leading-[1.1] tracking-tight text-foreground sm:text-4xl md:text-4xl"
+              className="text-3xl font-black leading-[1.1] tracking-tight text-foreground sm:text-4xl md:text-4xl lg:text-5xl"
             >
               {copy.hero.title}
             </motion.h1>

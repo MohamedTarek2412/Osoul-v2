@@ -27,16 +27,16 @@ export function CtaSection() {
 
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-14 sm:px-12 sm:py-16 md:py-20 gap-8">
             {/* Label Tag */}
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-4 py-1.5 text-sm font-bold tracking-widest text-primary uppercase">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-4 py-1.5 text-xs font-semibold tracking-widest text-primary uppercase">
               {isRtl ? 'استشارة مجانية' : 'Free Consultation'}
             </span>
 
             {/* Headline */}
             <div className="space-y-4 max-w-2xl">
-              <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
                 {copy.cta.title}
               </h2>
-              <p className="text-lg sm:text-xl text-muted-foreground font-medium leading-relaxed">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 {copy.cta.description}
               </p>
             </div>
@@ -46,7 +46,7 @@ export function CtaSection() {
               <Button
                 asChild
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6 rounded-xl transition-all hover:shadow-premium min-w-[200px]"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 rounded-xl transition-all hover:shadow-premium min-w-[200px]"
               >
                 <Link to="/contact" className="inline-flex items-center gap-2">
                   <span>{copy.cta.action}</span>

@@ -57,7 +57,7 @@ export function AboutSection() {
 
               {/* Floating Stat Card */}
               <div className="absolute -bottom-5 -end-5 rounded-2xl border border-border/80 bg-card px-5 py-4 shadow-premium backdrop-blur-md">
-                <p className="text-3xl font-extrabold font-mono text-primary">15+</p>
+                <p className="text-2xl font-extrabold font-mono text-primary">15+</p>
                 <p className="text-sm font-semibold text-muted-foreground mt-0.5 leading-tight max-w-[100px]">
                   {isRtl ? 'سنة خبرة في التأمين' : 'Years Insurance Expertise'}
                 </p>
@@ -77,12 +77,12 @@ export function AboutSection() {
               <span className="text-sm font-bold uppercase tracking-widest text-primary font-mono">
                 {isRtl ? companyProfile.about.title : companyProfile.about.titleEn}
               </span>
-              <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground leading-tight">
+              <h2 className="mt-3 text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground leading-tight">
                 {copy.about.title}
               </h2>
             </div>
 
-            <p className="text-lg sm:text-xl leading-relaxed text-muted-foreground font-medium">
+            <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
               {locale === 'ar' ? companyProfile.about.content : companyProfile.about.contentEn}
             </p>
 
@@ -91,7 +91,7 @@ export function AboutSection() {
               {pillars.map(({ icon: Icon, labelAr, labelEn }) => (
                 <div
                   key={labelEn}
-                  className="flex items-center gap-2 rounded-lg border border-border/80 bg-card px-4 py-2.5 text-sm font-bold text-foreground shadow-sm"
+                  className="flex items-center gap-2 rounded-lg border border-border/80 bg-card px-4 py-2.5 text-sm font-semibold text-foreground shadow-sm"
                 >
                   <Icon className="h-4 w-4 text-primary shrink-0" />
                   <span>{isRtl ? labelAr : labelEn}</span>

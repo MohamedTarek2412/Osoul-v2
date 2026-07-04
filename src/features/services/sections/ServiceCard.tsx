@@ -19,7 +19,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
           <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
             <Icon name={service.icon} className="text-primary" size={24} />
           </div>
-          <CardTitle className="text-xl">{locale === 'ar' ? service.titleAr : service.titleEn}</CardTitle>
+          <CardTitle className="text-lg font-bold">{locale === 'ar' ? service.titleAr : service.titleEn}</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground">

@@ -63,10 +63,10 @@ function MasonryCard({
           <Icon name={icon as IconName} className="h-5 w-5" />
         </div>
         <div>
-          <h3 className="text-lg sm:text-xl font-bold text-foreground transition-colors group-hover:text-primary">
+          <h3 className="text-lg font-bold text-foreground transition-colors group-hover:text-primary">
             {title}
           </h3>
-          <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground">
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             {desc}
           </p>
         </div>

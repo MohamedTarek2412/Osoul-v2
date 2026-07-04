@@ -72,10 +72,10 @@ export function BentoGridSection() {
                 <ShieldCheck className="h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground">
+                <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                   {isRtl ? 'وسيط تأميني مرخص من الهيئة العامة للرقابة المالية' : 'FRA Licensed & Regulated Brokerage'}
                 </h3>
-                <p className="text-base sm:text-lg leading-relaxed text-muted-foreground mt-3">
+                <p className="text-sm sm:text-base leading-relaxed text-muted-foreground mt-3">
                   {isRtl
                     ? `نحن نعمل بترخيص رقم 92 الصادر عن الهيئة العامة للرقابة المالية (FRA) في مصر. يضمن هذا الترخيص التزامنا التام بالقوانين واللوائح والمعايير المهنية لحماية مصالح عملائنا ومستقبل ممتلكاتهم.`
                     : `Licensed by the Egyptian Financial Regulatory Authority (FRA) under number 92. This registration guarantees full compliance with regulatory codes, offering financial security, corporate transparency, and consumer protection.`}
@@ -84,7 +84,7 @@ export function BentoGridSection() {
             </div>
             
             {/* Visual License Certificate Badge */}
-            <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-border/60 pt-4 text-sm font-semibold font-mono text-muted-foreground">
+            <div className="mt-6 flex flex-wrap items-center gap-4 border-t border-border/60 pt-4 text-xs font-semibold font-mono text-muted-foreground">
               <span className="bg-muted px-2.5 py-1 rounded border border-border">{isRtl ? 'رقم الترخيص: ٩٢' : 'FRA Lic. 92'}</span>
               <span className="bg-muted px-2.5 py-1 rounded border border-border">{isRtl ? 'تأسس: ٢٠١٩' : 'Est. 2019'}</span>
               <span className="bg-muted px-2.5 py-1 rounded border border-border text-primary font-bold">{isRtl ? 'نشط' : 'Active status'}</span>
@@ -98,10 +98,10 @@ export function BentoGridSection() {
                 <span>{years}</span>
                 <span className="text-xl ml-0.5">+</span>
               </div>
-              <h4 className="text-base font-extrabold text-foreground mt-1.5">
+              <h4 className="text-base font-bold text-foreground mt-1.5">
                 {isRtl ? 'سنة خبرة تأمينية' : 'Years Experience'}
               </h4>
-              <p className="text-sm font-medium text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 {isRtl ? 'في كبرى الشركات المحلية والدولية' : 'Inside global & regional carriers'}
               </p>
             </div>
@@ -113,10 +113,10 @@ export function BentoGridSection() {
           {/* Card 3: International Coverage (Height 1 row) */}
           <BentoCard className="flex items-center gap-6">
             <div className="flex-1">
-              <h4 className="text-lg font-extrabold text-foreground">
+              <h4 className="text-lg font-bold text-foreground">
                 {isRtl ? 'حلول تأمينية دولية' : 'Global & Local Reach'}
               </h4>
-              <p className="text-base leading-relaxed text-muted-foreground mt-1.5">
+              <p className="text-sm sm:text-base leading-relaxed text-muted-foreground mt-1.5">
                 {isRtl
                   ? 'برامج مصممة بالتعاون مع أكبر شركات التأمين المحلية والعالمية لتغطية المخاطر محلياً ودولياً.'
                   : 'Tailored programs engineered alongside international and national insurance syndicates.'}
@@ -133,10 +133,10 @@ export function BentoGridSection() {
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary border border-primary/20">
                 <HeartHandshake className="h-5 w-5" />
               </div>
-              <h4 className="text-lg font-extrabold text-foreground">
+              <h4 className="text-lg font-bold text-foreground">
                 {isRtl ? 'دعم مستمر ومتابعة مطالبات' : 'Claims & Document Support'}
               </h4>
-              <p className="text-base leading-relaxed text-muted-foreground">
+              <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
                 {isRtl
                   ? 'لا ينتهي دورنا بإصدار الوثيقة. فريقنا المتخصص يتابع المطالبات والتسويات ويضمن حصولك على حقوقك بأسرع وقت.'
                   : 'We actively manage policy documentation, expedite insurance payouts, and assist during complex adjustments.'}
@@ -147,10 +147,10 @@ export function BentoGridSection() {
           {/* Card 5: Tailored Solutions and CTA (Span 2 cols on md, height 1 row) */}
           <BentoCard className="md:col-span-2 flex items-center justify-between gap-6">
             <div className="space-y-2 flex-1">
-              <h4 className="text-lg sm:text-xl font-extrabold text-foreground">
+              <h4 className="text-lg sm:text-xl font-bold text-foreground">
                 {isRtl ? 'هل تبحث عن تغطية خاصة بمؤسستك؟' : 'Looking for Corporate Specialty Coverages?'}
               </h4>
-              <p className="text-base text-muted-foreground leading-relaxed max-w-md">
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed max-w-md">
                 {isRtl
                   ? 'نحن نساعد الشركات على تحليل المخاطر وتصميم باقات تأمين مخصصة للموظفين والممتلكات والمسؤوليات.'
                   : 'We help corporate entities evaluate liability metrics and design custom executive indemnity programs.'}
