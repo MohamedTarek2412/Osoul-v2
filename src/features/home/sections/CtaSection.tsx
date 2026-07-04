@@ -27,7 +27,7 @@ export function CtaSection() {
 
           <div className="relative z-10 flex flex-col items-center text-center px-6 py-14 sm:px-12 sm:py-16 md:py-20 gap-8">
             {/* Label Tag */}
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-4 py-1.5 text-xs font-bold tracking-widest text-primary uppercase">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/25 bg-primary/5 px-4 py-1.5 text-sm font-bold tracking-widest text-primary uppercase">
               {isRtl ? 'استشارة مجانية' : 'Free Consultation'}
             </span>
 
@@ -36,7 +36,7 @@ export function CtaSection() {
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
                 {copy.cta.title}
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
+              <p className="text-lg sm:text-xl text-muted-foreground font-medium leading-relaxed">
                 {copy.cta.description}
               </p>
             </div>

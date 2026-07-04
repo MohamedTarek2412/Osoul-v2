@@ -33,8 +33,11 @@ export function CertificationsSection() {
                 src={cert.logo}
                 alt={locale === 'ar' ? cert.nameAr : cert.nameEn}
                 className="max-h-16 w-full object-contain"
+                width={200}
+                height={64}
+                loading="lazy"
               />
-              <p className="mt-3 text-center text-xs text-muted-foreground">
+              <p className="mt-3 text-center text-sm font-medium text-muted-foreground">
                 {locale === 'ar' ? cert.nameAr : cert.nameEn}
               </p>
             </motion.div>

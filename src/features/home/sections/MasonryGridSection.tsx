@@ -63,10 +63,10 @@ function MasonryCard({
           <Icon name={icon as IconName} className="h-5 w-5" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg font-bold text-foreground transition-colors group-hover:text-primary">
+          <h3 className="text-lg sm:text-xl font-bold text-foreground transition-colors group-hover:text-primary">
             {title}
           </h3>
-          <p className="mt-2 text-xs sm:text-sm leading-relaxed text-muted-foreground font-light">
+          <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground">
             {desc}
           </p>
         </div>
@@ -75,7 +75,7 @@ function MasonryCard({
       <div className="mt-6 pt-4 border-t border-border/40 relative z-10 flex justify-end">
         <Link
           to={`/services#${id}`}
-          className="text-xs font-semibold text-primary inline-flex items-center gap-1 group-hover:underline"
+          className="text-sm font-semibold text-primary inline-flex items-center gap-1 group-hover:underline"
         >
           <span>{isRtl ? 'تفاصيل الخدمة' : 'Service Details'}</span>
           <span>→</span>

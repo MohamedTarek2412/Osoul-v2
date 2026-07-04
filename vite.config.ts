@@ -19,4 +19,17 @@ export default defineConfig({
     port: 5173,
     host: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Isolate framer-motion so it's cached separately from app code
+          'framer-motion': ['framer-motion'],
+          // Isolate react-dom (largest React piece) for long-term caching
+          'react-vendor': ['react', 'react-dom'],
+        },
+      },
+    },
+  },
 });
+

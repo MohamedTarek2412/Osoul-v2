@@ -55,21 +55,21 @@ function LeadershipCard({
 
       {/* Name and Roles */}
       <div className="space-y-1.5 w-full">
-        <h3 className="text-lg sm:text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+        <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-foreground group-hover:text-primary transition-colors">
           {name}
         </h3>
         
-        <p className="text-xs sm:text-sm font-bold text-primary font-mono tracking-wide uppercase">
+        <p className="text-sm sm:text-base font-bold text-primary font-mono tracking-wide uppercase">
           {isRtl ? roleAr : roleEn}
         </p>
         
-        <span className="inline-block text-[10px] text-muted-foreground bg-muted px-2.5 py-0.5 rounded border border-border/60">
+        <span className="inline-block text-xs font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded border border-border/60">
           {role}
         </span>
       </div>
 
       {/* Biography */}
-      <p className="mt-4 text-xs sm:text-sm leading-relaxed text-muted-foreground font-light flex-1">
+      <p className="mt-4 text-base leading-relaxed text-muted-foreground flex-1">
         {isRtl ? bio : bioEn}
       </p>
 

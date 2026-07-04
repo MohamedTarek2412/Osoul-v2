@@ -73,6 +73,8 @@ export function Header({ mobileNavOpen, onMenuOpen }: HeaderProps) {
                 'w-auto object-contain transition-all duration-300',
                 isScrolled ? 'h-9 sm:h-10' : 'h-11 sm:h-12'
               )}
+              width={150}
+              height={48}
             />
             <div className="hidden flex-col items-start leading-none sm:flex">
               <span className="text-base font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">

@@ -70,7 +70,7 @@ export function HeroSection() {
             {/* Regulatory Badge */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold tracking-wide text-primary shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-5 py-2.5 text-lg font-extrabold tracking-wide text-primary shadow-sm"
             >
               <ShieldCheck className="h-4 w-4 text-primary shrink-0" />
               <span>{copy.hero.pretitle}</span>
@@ -79,7 +79,7 @@ export function HeroSection() {
             {/* Main Luxury Title */}
             <motion.h1
               variants={itemVariants}
-              className="text-[var(--text-hero)] font-extrabold leading-[1.1] tracking-tight text-foreground font-sans"
+              className="text-3xl font-black leading-[1.1] tracking-tight text-foreground sm:text-4xl md:text-4xl"
             >
               {copy.hero.title}
             </motion.h1>
@@ -87,7 +87,7 @@ export function HeroSection() {
             {/* Description Text */}
             <motion.p
               variants={itemVariants}
-              className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-xl font-light"
+              className="text-base sm:text-lg leading-relaxed text-muted-foreground max-w-xl font-normal"
             >
               {copy.hero.description}
             </motion.p>
@@ -160,10 +160,10 @@ export function HeroSection() {
                     <img src={oibLogoSm} alt="OIB" className="h-6 w-6 object-contain" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase">
+                    <p className="text-sm font-bold text-primary font-mono tracking-widest uppercase">
                       {isRtl ? 'الريادة والخبرة' : 'LEADERSHIP & TRUST'}
                     </p>
-                    <p className="text-xs text-white/80 mt-0.5 line-clamp-1">
+                    <p className="text-sm text-white/80 mt-0.5 line-clamp-1">
                       {copy.hero.spotlight}
                     </p>
                   </div>

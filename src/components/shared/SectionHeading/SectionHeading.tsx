@@ -19,7 +19,7 @@ export function SectionHeading({
     <section className={cn('mb-12 max-w-2xl', className)} aria-labelledby={title.replace(/\s+/g, '-')}> 
       {subtitle && (
         <p className={cn(
-          'mb-2 text-sm font-semibold uppercase tracking-wider text-primary',
+          'mb-2 text-base font-bold uppercase tracking-wider text-primary',
           align === 'center' ? 'text-center' : 'text-start',
         )}>
           {subtitle}
@@ -28,7 +28,7 @@ export function SectionHeading({
       <h2
         id={title.replace(/\s+/g, '-')}
         className={cn(
-          'text-3xl font-bold tracking-tight md:text-4xl',
+          'text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl',
           align === 'center' ? 'text-center' : 'text-start',
         )}
       >
@@ -36,7 +36,7 @@ export function SectionHeading({
       </h2>
       {description && (
         <p className={cn(
-          'mt-4 text-lg text-muted-foreground',
+          'mt-4 text-lg font-medium leading-relaxed text-muted-foreground sm:text-xl',
           align === 'center' ? 'mx-auto text-center' : 'text-start',
         )}>
           {description}
