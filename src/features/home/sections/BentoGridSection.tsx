@@ -63,7 +63,7 @@ export function BentoGridSection() {
         />
 
         {/* Bento Grid Layout */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[220px]">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[220px]">
           
           {/* Card 1: FRA License (Span 2 cols on md, height tall - 2 rows) */}
           <BentoCard className="md:col-span-2 md:row-span-2 flex flex-col justify-between">
