@@ -1,58 +1,96 @@
+@theme {
+  --color-background: #FAF9F5;
+  --color-foreground: #11100C;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #11100C;
+
+  --color-primary: #BF9C3D;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #828110;
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-accent: #DAC793;
+  --color-accent-foreground: #11100C;
+
+  --color-muted: #F3F1E9;
+  --color-muted-foreground: #6A6657;
+
+  --color-border: #E6E2D3;
+  --color-input: #E6E2D3;
+  --color-ring: #BF9C3D;
+
+  --font-sans: "Plus Jakarta Sans", "Cairo", system-ui, -apple-system, sans-serif;
+  --font-ar: "Cairo", system-ui, -apple-system, sans-serif;
+
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+
+  --animate-spin-slow: spin 12s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  --shadow-premium: 0 10px 30px -10px rgba(191, 156, 61, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  --shadow-premium-hover: 0 20px 40px -15px rgba(191, 156, 61, 0.15), 0 1px 5px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 :root {
-  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  --font-ar: "Cairo", "Noto Naskh Arabic", system-ui;
-  /* Spacing scale (can be used in components via var(--space-1) etc.) */
-  --space-0: 0px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-5: 20px;
-  --space-6: 24px;
-  --space-7: 32px;
-  --space-8: 40px;
-  --background: 48 100% 98%;
-  --foreground: 222 47% 11%;
-  --card: 48 100% 100%;
-  --card-foreground: 222 47% 11%;
-  --primary: 44 52% 49%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 44 49% 72%;
-  --secondary-foreground: 222 47% 11%;
-  --muted: 48 17% 95%;
-  --muted-foreground: 222 12% 22%;
-  --accent: 59 78% 29%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 100%;
-  --border: 44 20% 90%;
-  --input: 44 20% 95%;
-  --ring: 59 78% 29%;
-  --radius: 0.75rem;
+  --space-unit: 1rem;
+  
+  /* Fluid Spacing Scale to avoid rigid AI spacing (24, 32, 64, 96, 128) */
+  --space-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 1.5vw, 1.125rem);
+  --space-md: clamp(1.25rem, 2.5vw, 1.875rem);
+  --space-lg: clamp(2rem, 4vw, 3rem);
+  --space-xl: clamp(3.5rem, 7vw, 5.25rem);
+  --space-2xl: clamp(5.5rem, 11vw, 8.25rem);
+
+  /* Font Scaling System */
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  --text-title-1: clamp(1.75rem, 3.5vw + 0.5rem, 3rem);
+  --text-title-2: clamp(1.35rem, 2.5vw + 0.25rem, 2rem);
+  --text-body: clamp(0.95rem, 0.5vw + 0.75rem, 1.125rem);
 }
 
 .dark {
-  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  --font-ar: "Cairo", "Noto Naskh Arabic", system-ui;
-  --background: 52 9% 9%;
-  --foreground: 40 15% 95%;
-  --card: 52 10% 16%;
-  --card-foreground: 0 0% 100%;
-  --primary: 44 52% 64%;
-  --primary-foreground: 222 47% 7%;
-  --secondary: 44 49% 52%;
-  --secondary-foreground: 222 47% 98%;
-  --muted: 218 10% 17%;
-  --muted-foreground: 216 18% 70%;
-  --accent: 44 52% 34%;
-  --accent-foreground: 0 0% 100%;
-  --destructive: 0 62% 50%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 44 20% 25%;
-  --input: 218 10% 18%;
-  --ring: 44 52% 64%;
+  --color-background: #0E0D0A;
+  --color-foreground: #FAF9F5;
+
+  --color-card: #161511;
+  --color-card-foreground: #FAF9F5;
+
+  --color-primary: #D4B255;
+  --color-primary-foreground: #0E0D0A;
+
+  --color-secondary: #9B9A23;
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-accent: #E5D5A9;
+  --color-accent-foreground: #0E0D0A;
+
+  --color-muted: #1E1C16;
+  --color-muted-foreground: #A7A28F;
+
+  --color-border: #2D2B22;
+  --color-input: #2D2B22;
+  --color-ring: #D4B255;
+
+  --shadow-premium: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.2);
+  --shadow-premium-hover: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Base resets & setups */
 html[dir="rtl"] body {
   font-family: var(--font-ar), var(--font-sans);
 }

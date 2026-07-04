@@ -3,14 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- DNS Prefetch & Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Premium font load: Plus Jakarta Sans + Cairo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Responsive Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#bf9c3d" />
+
+    <!-- Theme & Color Palette -->
+    <meta name="theme-color" content="#BF9C3D" />
+    <meta name="msapplication-navbutton-color" content="#BF9C3D" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Base SEO — will be overridden dynamically by React Helmet -->
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="أصول للتأمين - وسيط تأميني رائد في مصر" />
-    <title>أصول للتأمين | Osoul Insurance Broker</title>
+    <meta name="googlebot" content="index, follow" />
+    <meta name="description" content="أصول للوساطة التأمينية (OIB) — وسيط تأميني مرخص من الهيئة العامة للرقابة المالية رقم 92. حلول تأمين طبية وممتلكات وحياة ومخاطر للأفراد والشركات محلياً ودولياً." />
+    <meta name="keywords" content="تأمين, وسيط تأميني, تأمين طبي, تأمين شركات, تأمين ممتلكات, هيئة الرقابة المالية, Osoul Insurance, OIB, Egypt" />
+    <meta name="author" content="Osoul Insurance Brokerage" />
+    <meta name="copyright" content="Osoul Insurance Brokerage (S.A.E.) 2025" />
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="أصول للوساطة التأمينية" />
+    <meta property="og:title" content="أصول للوساطة التأمينية | Osoul Insurance Brokerage" />
+    <meta property="og:description" content="وسيط تأميني مرخص من هيئة الرقابة المالية رقم 92 يقدم حلول تأمينية شاملة للأفراد والشركات." />
+    <meta property="og:url" content="https://osoul-insurance.com" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@osoul_insurance" />
+    <meta name="twitter:title" content="أصول للوساطة التأمينية | Osoul Insurance Brokerage" />
+    <meta name="twitter:description" content="وسيط تأميني مرخص من FRA رقم 92. خبرة +15 سنة في سوق التأمين المصري." />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://osoul-insurance.com" />
+
+    <!-- Schema.org Structured Data — InsuranceAgency -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "أصول للوساطة التأمينية",
+      "alternateName": "Osoul Insurance Brokerage",
+      "legalName": "أصول للوساطة التأمينية (ش.م.م.)",
+      "url": "https://osoul-insurance.com",
+      "logo": "https://osoul-insurance.com/favicon.png",
+      "foundingDate": "2019",
+      "description": "وسيط تأميني مرخص من الهيئة العامة للرقابة المالية رقم 92. يقدم حلول تأمين طبية وممتلكات وحياة ومخاطر خاصة.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "43 القاهرة الجديدة، أمام فندق رينيسانس - التجمع الأول",
+        "addressLocality": "القاهرة",
+        "addressCountry": "EG"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+201115-666-387",
+          "contactType": "customer service",
+          "availableLanguage": ["Arabic", "English"]
+        }
+      ],
+      "sameAs": [
+        "https://facebook.com/osoul-insurance",
+        "https://linkedin.com/company/osoul-insurance"
+      ]
+    }
+    </script>
+
+    <title>أصول للوساطة التأمينية | Osoul Insurance Brokerage</title>
   </head>
   <body>
     <div id="root"></div>

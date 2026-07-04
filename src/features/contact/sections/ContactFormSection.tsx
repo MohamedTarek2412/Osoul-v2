@@ -39,7 +39,7 @@ export function ContactFormSection() {
       setSubmitState('success');
       showToast(copy.contactPage.success, 'success');
       reset();
-    } catch (e) {
+    } catch {
       setSubmitState('error');
       showToast('حدث خطأ أثناء الإرسال', 'error');
     }
